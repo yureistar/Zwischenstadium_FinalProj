@@ -1,12 +1,14 @@
 # Zwischenstadium_FinalProj
 
 ## Idea: Hangman
-"____ "
-"|  | "
-"|  O "
-"| /|\"
-"|  | "
-"| / \"
+____ 
+|  | 	Tries left: 3
+|  O 	Incorrect Letters: X Y B 1 2 3 4 5
+| /|\
+|  |  
+| / \
+_ _ I S _ _ _ _ S _ _ _ I U _
+
 Each strike has it's own string to show the Hanged Man.
 1 - only the post
 2 - noose
