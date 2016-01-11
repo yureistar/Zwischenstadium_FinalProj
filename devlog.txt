@@ -1,0 +1,8 @@
+~*--Zwischenstadium--*~
+“I don't know where I'm going, but I'm on my way.” -Carl Sandburg
+
+Memebers: Dorothy Ng and Lucy Tang
+
+<2015-01-11>
+L/D:	Planned on how to put Hangman idea into actual Java code
+D:	Created devlog and updated README.txt (will change README.txt -> README.md later)
