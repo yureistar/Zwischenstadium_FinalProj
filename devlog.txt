@@ -7,3 +7,7 @@ Memebers: Dorothy Ng and Lucy Tang
 L/D:	Planned on how to put Hangman idea into actual Java code
 D:	Created devlog and updated README.txt (will change README.txt -> README.md later)
 L:	Started coding Hangman -- Focusing on making instance vars for now.
+D:	Suggested separated classes for Hangman, Player, and the Game itself.
+		Hangman -- mainly contains display data
+		Player -- contains data for player
+		Game -- contains topics and actual answer
