@@ -11,3 +11,6 @@ D:	Suggested separated classes for Hangman, Player, and the Game itself.
 		Hangman -- mainly contains display data
 		Player -- contains data for player
 		Game -- contains topics and actual answer
+
+<2015-01-12>
+L/D:	Started creating default constructors and giving values to instance variables.
