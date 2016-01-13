@@ -17,3 +17,6 @@ L/D:	Started creating default constructors and giving values to instance variabl
 
 <2015-01-13>
 L\D:	Creating methods for classes to function as wanted.
+	Focusing on handling data for actual answer and player answer.
+L:	changed wordBox var from Array to String for simplicity
+Added Issues:	What if the player doesn't input a letter?
