@@ -14,3 +14,6 @@ D:	Suggested separated classes for Hangman, Player, and the Game itself.
 
 <2015-01-12>
 L/D:	Started creating default constructors and giving values to instance variables.
+
+<2015-01-13>
+L\D:	Creating methods for classes to function as wanted.
