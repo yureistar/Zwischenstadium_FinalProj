@@ -11,3 +11,12 @@ D:	Suggested separated classes for Hangman, Player, and the Game itself.
 		Hangman -- mainly contains display data
 		Player -- contains data for player
 		Game -- contains topics and actual answer
+
+<2015-01-12>
+L/D:	Started creating default constructors and giving values to instance variables.
+
+<2015-01-13>
+L\D:	Creating methods for classes to function as wanted.
+	Focusing on handling data for actual answer and player answer.
+L:	changed wordBox var from Array to String for simplicity
+Added Issues:	What if the player doesn't input a letter?
