@@ -1,7 +1,7 @@
 ~*--Zwischenstadium--*~
 “I don't know where I'm going, but I'm on my way.” -Carl Sandburg
 
-Memebers: Dorothy Ng and Lucy Tang
+Members: Dorothy Ng and Lucy Tang
 
 <2015-01-11>
 L/D:	Planned on how to put Hangman idea into actual Java code
@@ -19,4 +19,6 @@ L/D:	Started creating default constructors and giving values to instance variabl
 L\D:	Creating methods for classes to function as wanted.
 	Focusing on handling data for actual answer and player answer.
 L:	changed wordBox var from Array to String for simplicity
-Added Issues:	What if the player doesn't input a letter?
+
+<2015-01-14>
+L\D:	Currently lost on how to organize classes and methods. We are rethinking our organization plan.

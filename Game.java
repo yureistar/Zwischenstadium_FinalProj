@@ -11,6 +11,7 @@ public Game{
 
     //default constructor 
     public Game{
+	/***Choosing a topic...***/
 	//inclusive randomizer = [rand* { (max-min) +1 } ]+min
 	String[] Topic=TOPICS[Math.random()*TOPICS.length];
 	String Answer=Topic[(Math.random()*Topic.length - 1) + 1]; //exclude index 0
@@ -23,12 +24,22 @@ public Game{
 
 
     //the game
-    public void game(){
-	String letter = Keyboard.readString().toUpperCase();
+    public static void game(Player p, Hangman h){
+	System.out.println("Hangman.");
+	while (p.isEmpty() && p.getStrikes()<8){//where isEmpty checks to see if player has answered completely
+	    System.out.println("======================================");
+	    System.out.println(h);
+	    System.out.print("Your guess:");
+	    String letter = Keyboard.readString().toUpperCase();
+	    //run code to check if guess is valid or not (error handling)
+	    //run code to check if guess is in answer or not and deal with accordingly
+	}
     }
 
     //main
     public static void main(String[] args){
-
+	Player you=new Player();
+	Hangman comp=new Hangman();
+	game(you,comp);
     }//end main
 }//end game

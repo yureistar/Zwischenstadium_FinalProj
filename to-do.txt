@@ -1,0 +1,17 @@
+~*--Zwischenstadium--*~
+“I don't know where I'm going, but I'm on my way.” -Carl Sandburg
+
+Members: Dorothy Ng and Lucy Tang
+
+-------------TO-DO LIST OF ALL LISTS-------------
+1. Get basic code for Hangman to work.
+	e.g. dealing with input data
+2. Set up a basic skeleton for randomly choosing a Hangman answer
+3. Fine tune code bit by bit.
+4. If time, do extra features.
+	- difficulty settings
+	- ability to save
+
+
+-------------Added Issues-------------
+What if the player doesn't input a letter?
