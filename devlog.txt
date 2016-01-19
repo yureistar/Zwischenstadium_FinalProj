@@ -22,3 +22,8 @@ L:	changed wordBox var from Array to String for simplicity
 
 <2015-01-14>
 L\D:	Currently lost on how to organize classes and methods. We are rethinking our organization plan.
+
+<2015-01-19>
+L\D: 	Trying to make topic randomizer work.
+L:	Continuing with making randomizer work.
+D:	Starting on writing methods for Player.java.

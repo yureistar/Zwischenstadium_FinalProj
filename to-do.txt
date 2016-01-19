@@ -6,6 +6,8 @@ Members: Dorothy Ng and Lucy Tang
 -------------TO-DO LIST OF ALL LISTS-------------
 1. Get basic code for Hangman to work.
 	e.g. dealing with input data
+	//get Topic in Game() to work
+1.a. Write basic methods.
 2. Set up a basic skeleton for randomly choosing a Hangman answer
 3. Fine tune code bit by bit.
 4. If time, do extra features.
