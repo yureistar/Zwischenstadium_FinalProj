@@ -5,7 +5,7 @@ public class Game{
     private final static String[] A = {"A","Andrea ate apples and that was it."};
     private final static String[] B = {"B","Bunny.", "Bishy Blishwick wishes he had bushy eyebrows."};
     private final static String[] C = {"C","Chester the Chatty Cat chatted with Chad."};
-    private final static Object[] TOPICS = {A,B,C};
+    private final static Object[][] TOPICS = {A,B,C};
 
     private Object[] realAnswer;
 
@@ -13,16 +13,24 @@ public class Game{
     public Game(){
 	/***Choosing a topic...***/
 	//inclusive randomizer = [rand* { (max-min) +1 } ]+min
-	Object Topic=TOPICS[(int)(Math.random()*TOPICS.length)];
-	String Answer=Topic[(int)((Math.random()*Topic.length - 1) + 1)]; //exclude index 0
+	Object[] Topic=TOPICS[(int)(Math.random()*TOPICS.length)];
+	String Answer=(Topic[(int)((Math.random()*(Topic.length - 1)) + 1)]).toString(); //exclude index 0, change object to string
 	realAnswer = new Object[Answer.length()];
 	//put each element in answer string in the answer array separately
 	for (int i = 0; i < Answer.length(); i++){
 	    realAnswer[i] = Answer.substring(i,i+1);
-	    System.out.print(realAnswer[i]);
+	    //System.out.print(realAnswer[i]);
 	}
+	//System.out.println();
     }
 
+    //check for errors
+    public boolean valid(String letter){
+	String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	//check if it is a letter
+	boolean letter = letters.indexOf(letter) > 0;
+	
+    }
 
     //the game
     /*
