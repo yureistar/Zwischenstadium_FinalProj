@@ -15,7 +15,7 @@ public class Player{
 
     //strikes is length of letterbox / 2
     public int getStrikes(){
-	return letterBox.length/2
+	return letterBox.length/2;
     }
 
     //returns true if there is underscore/empty letter

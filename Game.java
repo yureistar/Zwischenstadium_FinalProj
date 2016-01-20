@@ -17,7 +17,7 @@ public class Game{
 	//inclusive randomizer = [rand* { (max-min) +1 } ]+min
 	Object[] Topic=TOPICS[(int)(Math.random()*TOPICS.length)];
 	String Answer=(Topic[(int)((Math.random()*(Topic.length - 1)) + 1)]).toString(); //exclude index 0, change object to string
-	realAnswer = new Object[Answer.length()];
+	realAnswer = new String[Answer.length()];
 	//put each element in answer string in the answer array separately
 	for (int i = 0; i < Answer.length(); i++){
 	    realAnswer[i] = Answer.substring(i,i+1);
