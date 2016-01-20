@@ -6,8 +6,10 @@ public class Game{
     private final static String[] B = {"B","Bunny.", "Bishy Blishwick wishes he had bushy eyebrows."};
     private final static String[] C = {"C","Chester the Chatty Cat chatted with Chad."};
     private final static Object[][] TOPICS = {A,B,C};
+    private final static String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    private Object[] realAnswer;
+    private final String[] realAnswer;
+   
 
     //default constructor 
     public Game(){
@@ -25,26 +27,44 @@ public class Game{
     }
 
     //check for errors
-    public boolean valid(String letter){
-	String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    public boolean isValid(String letter){
+	//check if letter has a length of ONE
+	boolean length = letter.length() == 1;
 	//check if it is a letter
 	boolean letter = letters.indexOf(letter) > 0;
-	
+	return length == true && letter == true;
+    }
+
+    //accessor for realAnswer
+    public String[] getRealAnswer(){
+	return realAnswer;
     }
 
     //the game
-    /*
     public static void game(Player p, Hangman h){
-	System.out.println("Hangman.");
-	while (p.isEmpty() && p.getStrikes()<8){//where isEmpty checks to see if player has answered completely
+	System.out.println("Hangman ");
+	
+	while (p.isEmpty() && p.getStrikes() < 8){//where isEmpty checks to see if player has answered completely
 	    System.out.println("======================================");
 	    System.out.println(h);
 	    System.out.print("Your guess:");
 	    String letter = Keyboard.readString().toUpperCase();
 	    //run code to check if guess is valid or not (error handling)
-	    //run code to check if guess is in answer or not and deal with accordingly
+	    if (isValid(letter)){
+		//run code to check if guess is in answer or not and deal with accordingly
+		if (p.inBox(letter)) 
+		    System.out.println("You already guessed this letter.");
+		else if (isCorrect(this,letter)){
+		    p.addToAnswer(this,letter);
+		}
+		else
+		    p.addToBox(letter);
+		System.out.println("Good guess!");
+	    }
+	    else
+		System.out.println("Sorry, invalid input. Please try again.");
 	}
-	}*/
+    }
 
     //main
     public static void main(String[] args){
