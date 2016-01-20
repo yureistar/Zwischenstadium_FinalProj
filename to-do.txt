@@ -10,6 +10,7 @@ Members: Dorothy Ng and Lucy Tang
 1.a. Write basic methods.
 2. Set up a basic skeleton for randomly choosing a Hangman answer
 3. Fine tune code bit by bit.
+	How do we want to arrange the code? Is it optimal or unecessarily complicated.
 4. If time, do extra features.
 	- difficulty settings
 	- ability to save

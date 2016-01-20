@@ -27,3 +27,8 @@ L\D:	Currently lost on how to organize classes and methods. We are rethinking ou
 L\D: 	Trying to make topic randomizer work.
 L:	Continuing with making randomizer work.
 D:	Starting on writing methods for Player.java.
+
+<2015-01-20>
+L:	Working on Game.java - valid method, which makes sure that user input is something that Player.java can run
+D:	Working on Player.java - methods to manage letterBox and playerAnswer
+L\D:	Made realAnswer a constant to prevent accidental changes to it.
