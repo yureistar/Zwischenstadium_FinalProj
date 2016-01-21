@@ -5,7 +5,7 @@ public class Player{
     
     //default constructor
     public Player(){
-	letterBox = new Object [8];
+	letterBox = "";
     }
 
     //return letterbox string
@@ -15,13 +15,13 @@ public class Player{
 
     //strikes is length of letterbox / 2
     public int getStrikes(){
-	return letterBox.length/2;
+	return letterBox.length()/2;
     }
 
     //returns true if there is underscore/empty letter
     //returns false if all letters filled in
     public boolean isEmpty(){
-	for (int i=0;i<playerAnswer.size();i++){
+	for (int i=0;i<playerAnswer.length;i++){
 	    if (playerAnswer[i].equals("_")){
 		return true;
 	    }
@@ -39,7 +39,11 @@ public class Player{
     //is the user input a letter in the answer
     public boolean isCorrect(Game g,String in){
 	String[] tempAns = g.getRealAnswer();
-	return tempAns.indexOf(in)>0;
+	for (String a : tempAns){
+	    if (a.equals(in))
+		return true;
+	}
+	return false;
     }
     
     //if user input letter not in answer, add to letterbox
@@ -51,7 +55,7 @@ public class Player{
     //if user input letter in answer, add to playerAnswer as appropriate
     public void addToAnswer(Game g,String in){
 	String[] tempAns = g.getRealAnswer();
-	for (int i=0;i<tempAns.size();i++){
+	for (int i=0;i<tempAns.length;i++){
 	    if (tempAns[i].equals(in)){
 		playerAnswer[i]=in;
 	    }

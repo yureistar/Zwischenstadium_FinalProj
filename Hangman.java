@@ -4,7 +4,7 @@ public class Hangman{
     
     //default constructor
     public Hangman(){
-	strikes = 0;
+	display="";
     }
 
     //

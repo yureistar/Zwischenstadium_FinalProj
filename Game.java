@@ -31,8 +31,8 @@ public class Game{
 	//check if letter has a length of ONE
 	boolean length = letter.length() == 1;
 	//check if it is a letter
-	boolean letter = letters.indexOf(letter) > 0;
-	return length == true && letter == true;
+	boolean isLetter = letters.indexOf(letter) > 0;
+	return length == true && isLetter == true;
     }
 
     //accessor for realAnswer
@@ -41,7 +41,7 @@ public class Game{
     }
 
     //the game
-    public static void game(Player p, Hangman h){
+    public void game(Player p, Hangman h){
 	System.out.println("Hangman ");
 	
 	while (p.isEmpty() && p.getStrikes() < 8){//where isEmpty checks to see if player has answered completely
@@ -54,7 +54,7 @@ public class Game{
 		//run code to check if guess is in answer or not and deal with accordingly
 		if (p.inBox(letter)) 
 		    System.out.println("You already guessed this letter.");
-		else if (isCorrect(this,letter)){
+		else if (p.isCorrect(this,letter)){
 		    p.addToAnswer(this,letter);
 		}
 		else
