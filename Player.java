@@ -2,10 +2,22 @@ public class Player{
     //instance vars
     private String letterBox; //just wrong letters
     private String[] playerAnswer;
+    private String display;
     
     //default constructor
     public Player(){
 	letterBox = "";
+    }
+
+    //overloaded constructor
+    public Player(Game g){
+	this();
+	playerAnswer = g.getRealAnswer();
+    }
+
+    //print out hangman
+    public String toString(){
+	return display;
     }
 
     //return letterbox string
@@ -16,6 +28,10 @@ public class Player{
     //strikes is length of letterbox / 2
     public int getStrikes(){
 	return letterBox.length()/2;
+    }
+    
+    //change le display
+    public void setDisplay(){
     }
 
     //returns true if there is underscore/empty letter
