@@ -68,9 +68,9 @@ public class Game{
 
     //main
     public static void main(String[] args){
-	//Player you=new Player();
-	//Hangman comp=new Hangman();
-	//game(you,comp);
 	Game test=new Game();
+	Player you=new Player();
+	//Hangman comp=new Hangman();
+	test.game(you,comp);
     }//end main
 }//end game
