@@ -7,7 +7,9 @@ public class Hangman{
 	display="";
     }
 
-    //
+    //change le display
+    public void setDisplay(){
+    }
 
     
 }//end class
