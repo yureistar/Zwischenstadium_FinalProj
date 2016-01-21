@@ -41,12 +41,12 @@ public class Game{
     }
 
     //the game
-    public void game(Player p, Hangman h){
+    public void game(Player p){
 	System.out.println("Hangman ");
 	
 	while (p.isEmpty() && p.getStrikes() < 8){//where isEmpty checks to see if player has answered completely
 	    System.out.println("======================================");
-	    System.out.println(h);
+	    System.out.println(p);
 	    System.out.print("Your guess:");
 	    String letter = Keyboard.readString().toUpperCase();
 	    //run code to check if guess is valid or not (error handling)
@@ -69,8 +69,7 @@ public class Game{
     //main
     public static void main(String[] args){
 	Game test=new Game();
-	Player you=new Player();
-	//Hangman comp=new Hangman();
-	test.game(you,comp);
+	Player you=new Player(test);
+	test.game(you);
     }//end main
 }//end game

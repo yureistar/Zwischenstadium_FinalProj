@@ -7,7 +7,17 @@ public class Player{
     //default constructor
     public Player(){
 	letterBox = "";
-	playerAnswer = test.getRealAnswer();
+    }
+
+    //overloaded constructor
+    public Player(Game g){
+	this();
+	playerAnswer = g.getRealAnswer();
+    }
+
+    //print out hangman
+    public String toString(){
+	return display;
     }
 
     //return letterbox string
