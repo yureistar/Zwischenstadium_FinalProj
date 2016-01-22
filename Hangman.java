@@ -1,13 +1,24 @@
 public class Hangman{
     //instance vars
-    private String strike1;
-    private String strike2;
-    private String strike3;
-    private String strike4;
-    private String strike5;
-    private String strike6;
-    private String strike7;
-    private String strike8;
+    private static String strike1="____ "+"\n|"+"\n|"+"\n|"+"\n|"+"\n|";
+    private static String strike2="____ "+"\n|  |"+"\n|"+"\n|"+"\n|"+"\n|";
+    private static String strike3="____ "+"\n|  |"+"\n|  O"+"\n|"+"\n|"+"\n|";
+    private static String strike4="____ "+"\n|  |"+"\n|  O"+"\n|  |"+"\n|  |"+"\n|";
+    private static String strike5="____ "+"\n|  |"+"\n|  O"+"\n| /|"+"\n|  |"+"\n|";
+    private static String strike6="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n|";
+    private static String strike7="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n| / ";
+    private static String strike8="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n| / \\";
+
+    public static void main (String[]args){
+	System.out.println(strike1);
+	System.out.println(strike2);
+	System.out.println(strike3);
+	System.out.println(strike4);
+	System.out.println(strike5);
+	System.out.println(strike6);
+	System.out.println(strike7);
+	System.out.println(strike8);
+    }
 
     //make subclasses for difficulty
 
