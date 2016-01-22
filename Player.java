@@ -3,6 +3,7 @@ public class Player{
     private String letterBox; //just wrong letters
     private String[] playerAnswer;
     private String display;
+    private final static String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     
     //default constructor
     public Player(){
@@ -12,7 +13,14 @@ public class Player{
     //overloaded constructor
     public Player(Game g){
 	this();
-	playerAnswer = g.getRealAnswer();
+	playerAnswer = new String[g.getRealAnswer().length];
+	for (int i = 0; i < g.getRealAnswer().length; i++){
+	    String character = g.getRealAnswer()[i];
+	    if (letters.indexOf(character) > 0)
+		playerAnswer[i] = "_ ";
+	    else
+		playerAnswer[i] = "   ";
+	}
     }
 
     //print out hangman

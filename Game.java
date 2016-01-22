@@ -64,6 +64,8 @@ public class Game{
 	    else
 		System.out.println("Sorry, invalid input. Please try again.");
 	}
+
+	System.out.println("GAME IS DONE");
     }
 
     //main
