@@ -17,9 +17,10 @@ public class Player{
 	for (int i = 0; i < g.getRealAnswer().length; i++){
 	    String character = g.getRealAnswer()[i];
 	    if (letters.indexOf(character) > 0)
-		playerAnswer[i] = "_ ";
+		playerAnswer[i] = "_";
 	    else
-		playerAnswer[i] = "   ";
+		playerAnswer[i] = " ";
+	    System.out.print(playerAnswer[i]);
 	}
     }
 

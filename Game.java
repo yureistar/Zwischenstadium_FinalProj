@@ -21,9 +21,9 @@ public class Game{
 	//put each element in answer string in the answer array separately
 	for (int i = 0; i < Answer.length(); i++){
 	    realAnswer[i] = Answer.substring(i,i+1);
-	    //System.out.print(realAnswer[i]);
+	    System.out.print(realAnswer[i]);
 	}
-	//System.out.println();
+	System.out.println();
     }
 
     //check for errors
