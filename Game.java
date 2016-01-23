@@ -1,5 +1,4 @@
 import cs1.Keyboard;
-
 public class Game{
     //instance vars
     private final static String[] A = {"A","Andrea ate apples and that was it."};

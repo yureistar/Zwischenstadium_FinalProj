@@ -41,5 +41,14 @@ L\D:	Decided to merge Hangman and Player methods
 D:	Hangman delegated to holding strike display info (e.g. what to display when strike 1)
 
 <2015-01-22>
+<<<<<<< HEAD
 D:	Working on Hangman.java
 L:	edited game and player
+=======
+L:	Working on Game.java and Player.java
+D:	Working on Hangman.java to test display methods
+**lost some info
+
+<2015-01-23> //It's been snowing all day.
+D:	Writing display methods.
+>>>>>>> bfd273c5514ff05b4c936605916f54f5e29795f9
