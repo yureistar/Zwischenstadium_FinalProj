@@ -40,7 +40,10 @@ public class Player{
     }
     
     //change le display
-    public void setDisplay(){
+    public void setDisplay(Hangman h){
+	dislay=h.getHangman(getStrikes);
+	display+="\nTries Left: "+this.getStrikes();
+	display+="\nIncorrect Letters:";
     }
 
     //returns true if there is underscore/empty letter
