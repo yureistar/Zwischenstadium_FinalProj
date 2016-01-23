@@ -15,13 +15,16 @@ public class Player{
 	this();
 	playerAnswer = new String[g.getRealAnswer().length];
 	for (int i = 0; i < g.getRealAnswer().length; i++){
-	    String character = g.getRealAnswer()[i];
-	    if (letters.indexOf(character) > 0)
-		playerAnswer[i] = "_";
+	    String character = g.getRealAnswer()[i].toUpperCase();
+	    if (letters.indexOf(character) >= 0)
+		playerAnswer[i] = "_ ";
+	    else if (character.equals(" "))
+		playerAnswer[i] = "  ";
 	    else
-		playerAnswer[i] = " ";
-	    System.out.print(playerAnswer[i]);
+		playerAnswer[i] = character;
 	}
+	for (String a : playerAnswer)
+	    System.out.print(a);
     }
 
     //print out hangman

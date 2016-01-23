@@ -21,7 +21,7 @@ public class Game{
 	//put each element in answer string in the answer array separately
 	for (int i = 0; i < Answer.length(); i++){
 	    realAnswer[i] = Answer.substring(i,i+1);
-	    System.out.print(realAnswer[i]);
+	    //System.out.print(realAnswer[i]);
 	}
 	System.out.println();
     }
@@ -72,6 +72,6 @@ public class Game{
     public static void main(String[] args){
 	Game test=new Game();
 	Player you=new Player(test);
-	test.game(you);
+	//test.game(you);
     }//end main
 }//end game
