@@ -49,3 +49,4 @@ D:	Working on Hangman.java to test display methods
 D:	Writing display methods.
 L:	Fixed underscore issue
 Adding an array to Hangman.
+Trying to trouble shoot.
