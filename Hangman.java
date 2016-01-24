@@ -8,7 +8,10 @@ public class Hangman{
     private static String strike6="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n|";
     private static String strike7="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n| / ";
     private static String strike8="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n| / \\";
+    private String[] strikes = {strike1,strike2,strike3,strike4,strike5,strike6,strike7,strike8};
 
+    public String getStrike
+    /*
     public static void main (String[]args){
 	System.out.println(strike1);
 	System.out.println(strike2);
@@ -19,7 +22,7 @@ public class Hangman{
 	System.out.println(strike7);
 	System.out.println(strike8);
     }
-
+    */
     //make subclasses for difficulty
 
     

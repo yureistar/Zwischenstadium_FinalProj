@@ -18,13 +18,13 @@ public class Player{
 	    String character = g.getRealAnswer()[i].toUpperCase();
 	    if (letters.indexOf(character) >= 0)
 		playerAnswer[i] = "_ ";
-	    else if (character.equals(" "))
+	    else if (character.equals(" ")) //for spaces
 		playerAnswer[i] = "  ";
-	    else
+	    else //takes care of punctuation marks
 		playerAnswer[i] = character;
 	}
-	for (String a : playerAnswer)
-	    System.out.print(a);
+	//for (String a : playerAnswer)
+	//System.out.print(a);
     }
 
     //print out hangman
@@ -43,10 +43,11 @@ public class Player{
     }
     
     //change le display
-    public void setDisplay(Hangman h){
-	dislay=h.getHangman(getStrikes);
-	display+="\nTries Left: "+this.getStrikes();
-	display+="\nIncorrect Letters:";
+    public void setDisplay(){
+	dislay=h.getHangman(getStrikes); 
+	display+="\nTries Left: "+this.getStrikes(); 
+	display+="\nIncorrect Letters:"; 
+
     }
 
     //returns true if there is underscore/empty letter
