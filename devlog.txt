@@ -48,3 +48,4 @@ D:	Working on Hangman.java to test display methods
 <2015-01-23> //It's been snowing all day.
 D:	Writing display methods.
 L:	Fixed underscore issue
+Adding an array to Hangman.
