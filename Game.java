@@ -19,7 +19,7 @@ public class Game{
 	realAnswer = new String[Answer.length()];
 	//put each element in answer string in the answer array separately
 	for (int i = 0; i < Answer.length(); i++){
-	    realAnswer[i] = Answer.substring(i,i+1);
+	    realAnswer[i] = Answer.substring(i,i+1).toUpperCase();
 	    //System.out.print(realAnswer[i]);
 	}
 	System.out.println();
@@ -30,7 +30,7 @@ public class Game{
 	//check if letter has a length of ONE
 	boolean length = letter.length() == 1;
 	//check if it is a letter
-	boolean isLetter = letters.indexOf(letter) > 0;
+	boolean isLetter = letters.indexOf(letter) >= 0;
 	return length == true && isLetter == true;
     }
 
@@ -42,12 +42,12 @@ public class Game{
     //the game
     public void game(Player p){
 	System.out.println("Hangman ");
-	
+	//System.out.println("empty?" + p.isEmpty());
 	while (p.isEmpty() && p.getStrikes() < 8){//where isEmpty checks to see if player has answered completely
 	    System.out.println("======================================");
 	    p.setDisplay();
 	    System.out.println(p);
-	    System.out.print("Your guess:");
+	    System.out.print("Your guess: ");
 	    String letter = Keyboard.readString().toUpperCase();
 	    //run code to check if guess is valid or not (error handling)
 	    if (isValid(letter)){
@@ -56,15 +56,17 @@ public class Game{
 		    System.out.println("You already guessed this letter.");
 		else if (p.isCorrect(this,letter)){
 		    p.addToAnswer(this,letter);
+		    System.out.println("Good guess!");
 		}
 		else
 		    p.addToBox(letter);
-		System.out.println("Good guess!");
 	    }
 	    else
 		System.out.println("Sorry, invalid input. Please try again.");
+	    p.setDisplay();
+	    System.out.println("======================================");
 	}
-
+	System.out.println(p);
 	System.out.println("GAME IS DONE");
     }
 

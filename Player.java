@@ -46,7 +46,7 @@ public class Player{
     //change le display
     public void setDisplay(){
 	display=comp.getHangman(getStrikes()); 
-	display+="\nTries Left: "+this.getStrikes(); 
+	display+="\nTries Left: "+(8-this.getStrikes()); 
 	display+="\nIncorrect Letters: "+letterBox+"\n";
 	for (String a : playerAnswer)
 	    display+=a;
@@ -56,7 +56,7 @@ public class Player{
     //returns false if all letters filled in
     public boolean isEmpty(){
 	for (int i=0;i<playerAnswer.length;i++){
-	    if (playerAnswer[i].equals("_")){
+	    if (playerAnswer[i].equals("_ ")){
 		return true;
 	    }
 	}
@@ -74,7 +74,7 @@ public class Player{
     public boolean isCorrect(Game g,String in){
 	String[] tempAns = g.getRealAnswer();
 	for (String a : tempAns){
-	    if (a.equals(in))
+	    if (a.toUpperCase().equals(in))
 		return true;
 	}
 	return false;
@@ -91,7 +91,7 @@ public class Player{
 	String[] tempAns = g.getRealAnswer();
 	for (int i=0;i<tempAns.length;i++){
 	    if (tempAns[i].equals(in)){
-		playerAnswer[i]=in;
+		playerAnswer[i]=in+" ";
 	    }
 	}
     }

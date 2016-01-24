@@ -8,10 +8,10 @@ public class Hangman{
     private static String strike6="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n|";
     private static String strike7="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n| / ";
     private static String strike8="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n| / \\";
-    private String[] strikes = {strike1,strike2,strike3,strike4,strike5,strike6,strike7,strike8};
+    private String[] strikes = {" ",strike1,strike2,strike3,strike4,strike5,strike6,strike7,strike8};
 
     public String getHangman(int num){
-	return strikes[num-1];
+	return strikes[num];
     }
     /*
     public static void main (String[]args){
