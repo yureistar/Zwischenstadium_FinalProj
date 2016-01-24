@@ -45,6 +45,7 @@ public class Game{
 	
 	while (p.isEmpty() && p.getStrikes() < 8){//where isEmpty checks to see if player has answered completely
 	    System.out.println("======================================");
+	    p.setDisplay();
 	    System.out.println(p);
 	    System.out.print("Your guess:");
 	    String letter = Keyboard.readString().toUpperCase();
@@ -69,8 +70,8 @@ public class Game{
 
     //main
     public static void main(String[] args){
-	Game test=new Game();
-	Player you=new Player(test);
-	//test.game(you);
+	Game test = new Game();
+	Player you = new Player(test);
+	test.game(you);
     }//end main
 }//end game
