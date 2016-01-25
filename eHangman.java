@@ -1,4 +1,4 @@
-public class mHangman { //medium level
+public class eHangman { //easy level
     //instance vars
     private static String strike1="____ "+"\n|"+"\n|"+"\n|"+"\n|"+"\n|";
     private static String strike2="____ "+"\n|  |"+"\n|"+"\n|"+"\n|"+"\n|";
