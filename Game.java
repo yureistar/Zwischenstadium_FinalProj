@@ -49,10 +49,8 @@ public class Game{
         System.out.println("\n~~Rules~~");
         System.out.println("You are about to decide the fate of the hanged man. Depending on your answers, he may remain stationary or progress.");
         System.out.println("To save him, you will be presented with a puzzle.");
-	System.out.println("To solve the puzzle, you must guess a letter.");
-	System.out.println("You will have a limited number of guesses.");
-	System.out.println("    -If you solve the puzzle before you run out of guesses, then the man will be able to see a new sight of the world.");
-	System.out.println("    -If you fail, then alas, it is a shame, but the man will stay at standstill.");
+	System.out.println("If you successfully  solve the puzzle, then the man will be able to see a new sight of the world.");
+	System.out.println("If you fail, then alas, it is a shame, but the man will stay at standstill.");
 	System.out.println("Why are we doing this, you ask? The answer is not important.");
 	System.out.println("Now, when you are ready...");
 	System.out.println("1: Begin\t2: End");

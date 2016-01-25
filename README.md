@@ -1,18 +1,12 @@
 # Zwischenstadium_FinalProj
 
-##Idea: Hangman
- <br />"____ "
- <br />"|  | "
- <br />"|  O "
- <br />"| /|\"
- <br />"|  | "
- <br />"| / \"
-<br />Each strike has it's own string to show the Hanged Man.
-<br />1 - only the post
-<br />2 - noose
-<br />3 - head
-<br />4 - body
-<br />5,6 - arms
-<br />7,8 - legs
+##XII. The Hanged Man
+"A very classic game of Hangman."
 
+You are about to decide the fate of the hanged man. Depending on your answers, he may remain stationary or progress.
+To save him, you will be presented with a puzzle that you must solve. The puzzle will be a word, phrase, or sentence. You will be guessing the contents of the puzzle.
 
+Rules:
+1. You can only guess letters.
+2. You will only have a limited number of tries. If you run out of tries, you lose.
+3. You win when you have correctly guessed every letter in the puzzle.
