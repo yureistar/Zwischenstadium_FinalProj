@@ -54,3 +54,4 @@ It’s almost working!!
 
 <2015-01-24>
 D:	Modified possible answers and topics. Added rules.
+D:	Made the README.md beautiful.
