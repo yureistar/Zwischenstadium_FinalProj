@@ -87,7 +87,7 @@ public class Game{
 	p.setHangman(difficulty);
 	System.out.println("======================================");
 	//System.out.println("empty?" + p.isEmpty());
-	while (p.isEmpty() && p.getStrikes() < 8){//where isEmpty checks to see if player has answered completely
+	while (p.isEmpty() && p.getStrikes() < p.getHMClass().getMaxTries()){//where isEmpty checks to see if player has answered completely
 	    p.setDisplay();
 	    System.out.println(p);
 	    System.out.println("Topic: "+CATEGORY);

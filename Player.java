@@ -62,6 +62,11 @@ public class Player{
 	    comp = new dHangman();
     }
 
+    //return Hangman object called comp
+    public Hangman getHMClass(){
+	return comp;
+    }
+
     //returns true if there is underscore/empty letter
     //returns false if all letters filled in
     public boolean isEmpty(){
