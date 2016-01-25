@@ -46,7 +46,7 @@ public class Player{
     //change le display
     public void setDisplay(){
 	display=comp.getHangman(getStrikes()); 
-	display+="\nTries Left: "+(8-this.getStrikes()); 
+	display+="\nTries Left: "+(comp.getMaxTries()-this.getStrikes()); 
 	display+="\nIncorrect Letters: "+letterBox+"\n";
 	for (String a : playerAnswer)
 	    display+=a;

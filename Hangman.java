@@ -1,6 +1,8 @@
-public class Hangman { //superclass
+public abstract class Hangman { //superclass
     //instance vars
     protected String[] strikes;
+
+    public abstract int getMaxTries();
 
     public String getHangman(int num){
 	return strikes[num];

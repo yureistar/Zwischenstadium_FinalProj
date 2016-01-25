@@ -5,6 +5,10 @@ public class dHangman extends Hangman{ //difficult level
     private static String strike3="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n|";
     private static String strike4="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n| / \\";
     private String[] strikes = {" ",strike1,strike2,strike3,strike4};
+
+    public int getMaxTries(){
+	return 4;
+    }
     
     public String getHangman(int num){
 	return strikes[num];

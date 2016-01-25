@@ -7,6 +7,10 @@ public class mHangman extends Hangman{ //medium level
     private static String strike5="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n| / ";
     private static String strike6="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n| / \\";
     private String[] strikes = {" ",strike1,strike2,strike3,strike4,strike5,strike6};
+
+    public int getMaxTries(){
+	return 6;
+    }
     
     public String getHangman(int num){
 	return strikes[num];
