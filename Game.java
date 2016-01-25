@@ -78,10 +78,12 @@ public class Game{
 	else System.out.println("Hm... Are you playing around? Then I suppose you do want to play. Alright. Let's begin!");
 	System.out.println("======================================");
 	System.out.println("Choose your difficulty: \n 1. Easy \n 2. Normal \n 3. Difficult");
+	System.out.print("Your choice: ");
 	String difficulty = Keyboard.readString();
 	while (!(isValidN(difficulty))){
 	    System.out.println("Invalid input, try again.");
 	    System.out.println("Choose your difficulty: \n 1. Easy \n 2. Normal \n 3. Difficult");
+	    System.out.print("Your choice: ");
 	    difficulty = Keyboard.readString();
 	}
 	p.setHangman(difficulty);
