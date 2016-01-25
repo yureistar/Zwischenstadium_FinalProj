@@ -6,6 +6,7 @@ public class Game{
     private final static String[] MISC = {"Misc","automatons","adaptive design","cruise east","very good luck","enlightening archive","the infinite cookie jar","freezing ability"};
     private final static Object[][] TOPICS = {ZODIAC,IDIOMS,MISC};
     private final static String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private final static String nums = "0123456789";
 
     private final String CATEGORY;
     private final String[] realAnswer;
@@ -27,13 +28,22 @@ public class Game{
 	System.out.println();
     }
 
-    //check for errors
-    public boolean isValid(String letter){
+    //check for errors for letter
+    public boolean isValidL(String letter){
 	//check if letter has a length of ONE
 	boolean length = letter.length() == 1;
 	//check if it is a letter
 	boolean isLetter = letters.indexOf(letter) >= 0;
 	return length == true && isLetter == true;
+    }
+
+    //check for errors for number input difficulty
+    public boolean isValidN(String num){
+	//check if letter has a length of ONE
+	boolean length = num.length() == 1;
+	//check if it is a letter
+	boolean isNum = nums.indexOf(num) >= 0;
+	return length == true && isNum == true;
     }
 
     //accessor for realAnswer
@@ -56,10 +66,26 @@ public class Game{
 	System.out.println("1: Begin\t2: End");
 	System.out.print("Your choice: ");
 	String ready = Keyboard.readString();
+	while (!(isValidN(ready))){
+	    System.out.println("Invalid input, try again.");
+	    System.out.println("Now, when you are ready...");
+	    System.out.println("1: Begin\t2: End");
+	    System.out.print("Your choice: ");
+	    ready = Keyboard.readString();
+	}
 	if (ready.equals("2")) return;
 	else if (ready.equals ("1")) System.out.println("It's time to begin!");
 	else System.out.println("Hm... Are you playing around? Then I suppose you do want to play. Alright. Let's begin!");
-	System.out.println("======================================");    
+	System.out.println("======================================");
+	System.out.println("Choose your difficulty: \n 1. Easy \n 2. Normal \n 3. Difficult");
+	String difficulty = Keyboard.readString();
+	while (!(isValidN(difficulty))){
+	    System.out.println("Invalid input, try again.");
+	    System.out.println("Choose your difficulty: \n 1. Easy \n 2. Normal \n 3. Difficult");
+	    difficulty = Keyboard.readString();
+	}
+	p.setHangman(difficulty);
+	System.out.println("======================================");
 	//System.out.println("empty?" + p.isEmpty());
 	while (p.isEmpty() && p.getStrikes() < 8){//where isEmpty checks to see if player has answered completely
 	    p.setDisplay();
@@ -68,7 +94,7 @@ public class Game{
 	    System.out.print("Your guess: ");
 	    String letter = Keyboard.readString().toUpperCase();
 	    //run code to check if guess is valid or not (error handling)
-	    if (isValid(letter)){
+	    if (isValidL(letter)){
 		//run code to check if guess is in answer or not and deal with accordingly
 		if (p.inBox(letter+" ")) {System.out.println("\n\n\n\n\n\n\n\n\n\nNope.");}
 		else if (p.isCorrect(this,letter)){

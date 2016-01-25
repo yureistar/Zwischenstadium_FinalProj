@@ -1,14 +1,15 @@
-public class dHangman { //difficult level
+public class dHangman extends Hangman{ //difficult level
     //instance vars
     private static String strike1="____ "+"\n|  |"+"\n|  O"+"\n|"+"\n|"+"\n|";
     private static String strike2="____ "+"\n|  |"+"\n|  O"+"\n|  |"+"\n|  |"+"\n|";
     private static String strike3="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n|";
     private static String strike4="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n| / \\";
     private String[] strikes = {" ",strike1,strike2,strike3,strike4};
-
+    
     public String getHangman(int num){
 	return strikes[num];
     }
+    
     /*
     public static void main (String[]args){
 	System.out.println(strike1);

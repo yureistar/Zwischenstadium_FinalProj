@@ -1,4 +1,4 @@
-public class mHangman { //medium level
+public class mHangman extends Hangman{ //medium level
     //instance vars
     private static String strike1="____ "+"\n|  |"+"\n|  O"+"\n|"+"\n|"+"\n|";
     private static String strike2="____ "+"\n|  |"+"\n|  O"+"\n|  |"+"\n|  |"+"\n|";
@@ -7,10 +7,11 @@ public class mHangman { //medium level
     private static String strike5="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n| / ";
     private static String strike6="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n| / \\";
     private String[] strikes = {" ",strike1,strike2,strike3,strike4,strike5,strike6};
-
+    
     public String getHangman(int num){
 	return strikes[num];
     }
+    
     /*
     public static void main (String[]args){
 	System.out.println(strike1);

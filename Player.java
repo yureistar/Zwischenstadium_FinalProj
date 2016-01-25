@@ -4,7 +4,7 @@ public class Player{
     private String[] playerAnswer;
     private String display;
     private final static String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    private Hangman comp = new Hangman();
+    private Hangman comp;
     
     //default constructor
     public Player(){
@@ -50,6 +50,16 @@ public class Player{
 	display+="\nIncorrect Letters: "+letterBox+"\n";
 	for (String a : playerAnswer)
 	    display+=a;
+    }
+
+    //create hangman according to inputted difficulty
+    public void setHangman(String difficulty){
+	if (difficulty.equals("1"))
+	    comp = new eHangman();
+	else if (difficulty.equals("2"))
+	    comp = new mHangman();
+	else if (difficulty.equals("3"))
+	    comp = new dHangman();
     }
 
     //returns true if there is underscore/empty letter
