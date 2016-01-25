@@ -63,7 +63,7 @@ public class Game{
 	System.out.println("If you fail, then alas, it is a shame, but the man will stay at standstill.");
 	System.out.println("Why are we doing this, you ask? The answer is not important.");
 	System.out.println("Now, when you are ready...");
-	System.out.println("1: Begin\t2: End");
+	System.out.println(" 1. Begin \n 2. End");
 	System.out.print("Your choice: ");
 	String ready = Keyboard.readString();
 	while (!(isValidN(ready))){
