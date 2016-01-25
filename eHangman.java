@@ -9,11 +9,19 @@ public class eHangman extends Hangman{ //easy level
     private static String strike7="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n| / ";
     private static String strike8="____ "+"\n|  |"+"\n|  O"+"\n| /|\\"+"\n|  |"+"\n| / \\";
     private String[] strikes = {" ",strike1,strike2,strike3,strike4,strike5,strike6,strike7,strike8};
+<<<<<<< HEAD
     
     public String getHangman(int num){
 	return strikes[num];
     }
     
+=======
+
+    public String getHangman(int num){
+	return strikes[num];
+    }
+
+>>>>>>> 49f496a99de584c7a5d8cb3043f705d3005d65e8
     /*
     public static void main (String[]args){
 	System.out.println(strike1);
