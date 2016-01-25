@@ -67,7 +67,7 @@ public class Player{
     //returns true is in letterBox
     //false otherwise
     public boolean inBox(String in){
-	return letterBox.indexOf(in) > 0;
+	return letterBox.indexOf(in) >= 0;
     }
     
     //is the user input a letter in the answer

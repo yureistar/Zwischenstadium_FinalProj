@@ -51,3 +51,6 @@ L:	Fixed underscore issue
 Adding an array to Hangman.
 Trying to troubleshoot.
 It’s almost working!!
+
+<2015-01-24>
+D:	Modified possible answers and topics. Added rules.
